@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบจัดการสินค้าคลัง</title>
+</head>
+<body>
+  <h1>ระบบจัดการสินค้าคลังขนาดเล็ก</h1>
+  
+  <!-- ปุ่มและฟอร์มสำหรับเพิ่มสินค้า -->
+  <div>
+    <h2>เพิ่มสินค้าใหม่</h2>
+    <form id="addProductForm">
+      <input type="text" id="productName" placeholder="ชื่อสินค้า" required />
+      <input type="number" id="productPrice" placeholder="ราคา" required />
+      <input type="number" id="productStock" placeholder="จำนวนในสต็อก" required />
+      <input type="number" id="productMinStock" placeholder="ขั้นต่ำในสต็อก" required />
+      <select id="productCategory" required>
+        <option value="">เลือกหมวดหมู่</option>
+        <option value="อิเล็กทรอนิกส์">อิเล็กทรอนิกส์</option>
+        <option value="เสื้อผ้า">เสื้อผ้า</option>
+        <option value="ของใช้ในบ้าน">ของใช้ในบ้าน</option>
+        <option value="อาหาร">อาหาร</option>
+      </select>
+      <button type="submit">เพิ่มสินค้า</button>
+    </form>
+  </div>
+
+  <!-- ตารางแสดงสินค้าทั้งหมด -->
+  <div>
+    <h2>รายการสินค้า</h2>
+    <table border="1">
+        <thead>
+            <tr>
+              <th>ชื่อสินค้า</th>
+              <th>ราคา</th>
+              <th>สต็อก</th>
+              <th>หมวดหมู่</th>
+              <th>ยอดขายทั้งหมด</th>
+              <th>ขายสินค้า</th>
+              <th>เพิ่มสต็อก</th>
+            </tr>
+          </thead>
+          
+      <tbody id="productTableBody">
+        <!-- รายการสินค้าจะถูกเติมที่นี่ -->
+      </tbody>
+    </table>
+  </div>
+
+  <div id="lowStockAlert" style="color: red; font-weight: bold;"></div>
+  <div>
+    <div class="best-sellers-container">
+        <h2>🏆 รายงานสินค้าขายดี</h2>
+        <button class="update-report" onclick="generateBestSellers()">อัปเดตรายงาน</button>
+        <div id="bestSellersList" class="best-sellers-list"></div>
+      </div>      
+  </div>
+  
+
+
+  <!-- เชื่อมโยงไฟล์ JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

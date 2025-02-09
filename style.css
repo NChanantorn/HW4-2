@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+  }
+  
+  button:hover {
+    background: #218838;
+  }
+  
+  button.delete {
+    background: #dc3545;
+  }
+  
+  button.delete:hover {
+    background: #c82333;
+  }
+  
+  input {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  button {
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    font-size: 14px;
+  }
+  
+  /* ปุ่มขาย (สีเขียว) */
+  button.sell {
+    background: #28a745;
+  }
+  button.sell:hover {
+    background: #218838;
+  }
+  
+  /* ปุ่มเพิ่มสต็อก (สีฟ้า) */
+  button.add-stock {
+    background: #007bff;
+  }
+  button.add-stock:hover {
+    background: #0056b3;
+  }
+  
+  /* ปุ่มลบ (สีแดง) */
+  button.delete {
+    background: #dc3545;
+  }
+  button.delete:hover {
+    background: #c82333;
+  }
+  
+  /* กล่องแสดงสินค้าขายดี */
+.best-sellers-container {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .best-sellers-container h2 {
+    color: #ff9800;
+  }
+  
+  .update-report {
+    background: #ff9800;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .update-report:hover {
+    background: #e68900;
+  }
+  
+  /* รายการสินค้าขายดี */
+  .best-sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .best-seller-item {
+    background: #ffebc1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .best-seller-item span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  
